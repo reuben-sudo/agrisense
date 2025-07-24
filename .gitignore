@@ -1,0 +1,18 @@
+# Node modules (React)
+node_modules/
+dist/
+
+# Python cache and virtual environment
+__pycache__/
+*.pyc
+venv/
+uploads/
+
+# Environment and system files
+.env
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
