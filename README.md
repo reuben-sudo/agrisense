@@ -2,6 +2,8 @@
 
 AgriSense is an AI-powered web application designed to empower Kenyan farmers by providing tools for crop prediction, real-time weather insights, market uploads, and data visualization.
 
+🌐 **Live Demo**: [https://agrisense-ai.netlify.app](https://agrisense-ai.netlify.app)
+
 ---
 
 ## 🚀 Features
@@ -19,10 +21,10 @@ AgriSense is an AI-powered web application designed to empower Kenyan farmers by
 
 ## 🛠️ Tech Stack
 
-| Frontend         | Backend         | AI/ML                  | Deployment               |
-|------------------|------------------|-------------------------|--------------------------|
-| React + Vite     | Flask (Python)   | scikit-learn, joblib    | GitHub / Render / Railway |
-| Axios            | Flask-CORS       | RandomForestClassifier  | (To be deployed)         |
+| Frontend         | Backend         | AI/ML                  | Deployment                        |
+|------------------|------------------|-------------------------|------------------------------------|
+| React + Vite     | Flask (Python)   | scikit-learn, joblib    | Netlify (Frontend), Render (TBD)   |
+| Axios            | Flask-CORS       | RandomForestClassifier  |                                    |
 
 ---
 
@@ -62,9 +64,7 @@ python app.py           # Start Flask backend
 ➡ Visit: http://localhost:5000
 
 🔧 2. Frontend (React)
-bash
-Copy
-Edit
+
 cd frontend
 npm install
 npm run dev
@@ -76,16 +76,16 @@ Create a .env file inside the frontend/ folder:
 
 VITE_WEATHER_API_KEY=a6b7c04f05510cdcf2b249d16da619d1
 🌍 Deployment Tips
-✅ Use Render or Railway for the backend (Flask API).
-
-✅ Use Vercel or Netlify for the frontend (React/Vite).
-
-💡 Use .gitignore to avoid pushing large files (e.g., uploads/, crop_model.pkl, venv/, node_modules/).
+✅ Use Render or Railway for deploying the backend (Flask API).
+✅ Use Netlify or Vercel for deploying the frontend (React/Vite).
+✅ Use .gitignore to avoid pushing large files like uploads/, crop_model.pkl, venv/, and node_modules/.
 
 🤖 AI Model
-Trained with RandomForestClassifier on features like nitrogen, phosphorus, potassium, temperature, humidity, pH, and rainfall.
+Trained using RandomForestClassifier
 
-Output: Predicted best crop to grow.
+Input features: nitrogen, phosphorus, potassium, temperature, humidity, pH, rainfall
+
+Output: Predicted best crop to grow
 
 Model file: crop_model.pkl
 
