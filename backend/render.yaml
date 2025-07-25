@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: agrisense-backend
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    plan: free
+    region: oregon
+    runtime: python
