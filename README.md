@@ -89,6 +89,16 @@ Output: Predicted best crop to grow
 
 Model file: crop_model.pkl
 
+---
+
+## 🔮 Future Improvements
+
+- 🛢️ **Database Integration** – Plan to include a real-time cloud database (e.g., Firebase Firestore or PostgreSQL) for storing crop data, user accounts, and marketplace activity.
+- 🔐 **Authentication** – Add secure login and user profile management.
+- 🧠 **Advanced AI Features** – Train improved models for pest detection, soil analysis, and personalized crop recommendations.
+- 🌍 **Localization** – Add support for Swahili and other regional languages.
+
+
 📬 Support
 📧 Email: kokanir97@gmail.com
 
